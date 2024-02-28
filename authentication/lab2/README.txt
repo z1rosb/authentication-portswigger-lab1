@@ -1,3 +1,4 @@
+LAB: 2FA simple bypass
 
 usage: lab2.py -t TARGET -u USER -p PASSWORD
 
