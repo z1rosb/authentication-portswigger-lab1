@@ -27,7 +27,7 @@ proxies = {'http': 'http://127.0.0.1:8080', 'https': 'https://127.0.0.1:8080'}
 def get_arguments():
 
     parser = argparse.ArgumentParser(description='2FA bypassing')
-    parser.add_argument("-t", "--target", dest="target", required=True, help='Victim url (Ex: -u https://www.example.com)')
+    parser.add_argument("-t", "--target", dest="target", required=True, help='Victim url (Ex: -t https://www.example.com)')
     parser.add_argument("-u", "--user", dest="user", required=True, help="User's victim")
     parser.add_argument("-p", "--password", dest="password", required=True, help="Password's victim")
 
