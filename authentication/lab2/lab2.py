@@ -28,8 +28,8 @@ def get_arguments():
 
     parser = argparse.ArgumentParser(description='2FA bypassing')
     parser.add_argument("-t", "--target", dest="target", required=True, help='Victim url (Ex: -t https://www.example.com)')
-    parser.add_argument("-u", "--user", dest="user", required=True, help="User's victim")
-    parser.add_argument("-p", "--password", dest="password", required=True, help="Password's victim")
+    parser.add_argument("-u", "--user", dest="user", required=True, help="Victim user")
+    parser.add_argument("-p", "--password", dest="password", required=True, help="Victim password")
 
     options = parser.parse_args()
 
